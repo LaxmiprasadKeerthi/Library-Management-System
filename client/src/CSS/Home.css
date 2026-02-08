@@ -1,0 +1,63 @@
+.home {
+  height: 100vh;
+  background-image: url("../assets/image.png"); /* Optional: add a background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: lightgreen;
+  padding: 1rem;
+}
+
+.home-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  width: 100%;
+}
+
+.home-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.home-overlay p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* 🔽 Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .home-overlay {
+    padding: 2rem;
+  }
+
+  .home-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .home-overlay p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-overlay {
+    padding: 1.5rem;
+  }
+
+  .home-overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-overlay p {
+    font-size: 1rem;
+  }
+}

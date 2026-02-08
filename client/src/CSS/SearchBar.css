@@ -1,0 +1,101 @@
+/* General container */
+.search-bar-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  min-width: 180px; /* Ensure the input field is not too small */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 100px; /* Ensure button does not shrink too much */
+}
+
+/* Dropdown styling */
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: black;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-item:hover {
+  background-color: green;
+}
+
+/* Book info styling */
+.book-info {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: blueviolet;
+  border-left: 4px solid #007bff;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .search-bar-container {
+    max-width: 100%; /* Full width on small screens */
+    padding: 10px;
+  }
+
+  .search-bar input {
+    font-size: 14px; /* Smaller font on small screens */
+  }
+
+  .search-bar button {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .dropdown-list {
+    max-height: 150px; /* Adjust dropdown height on smaller screens */
+  }
+
+  .book-info {
+    font-size: 14px; /* Smaller text for book info */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-bar {
+    flex-direction: column; /* Stack the input and button */
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%; /* Ensure they take full width */
+    margin-bottom: 10px; /* Add space between input and button */
+  }
+}

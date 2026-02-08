@@ -1,0 +1,95 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 0.8rem 2rem;
+  color: white;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+/* Navbar links styling */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Navbar actions (search and login/logout buttons) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Button and search bar styling */
+.nav-btn, .logout-button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-button:hover, .nav-btn:hover {
+  background-color: #ffaa00;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Stack the navbar links and actions vertically on smaller screens */
+  .navbar {
+    padding: 0.8rem 1rem; /* Adjust padding */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start; /* Align links to the left */
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 1rem; /* Space between links and search bar */
+  }
+
+  .nav-btn, .logout-button {
+    width: 100%; /* Full width for buttons */
+    padding: 0.6rem; /* Adjust padding for better click area */
+  }
+
+  .nav-links a {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjustments for very small screens (phones) */
+  .nav-links a {
+    font-size: 12px; /* Smaller text for even smaller screens */
+  }
+
+  .nav-actions {
+    gap: 0.5rem; /* Reduce gap between search and buttons */
+  }
+
+  .nav-btn, .logout-button {
+    padding: 0.5rem; /* Adjust button padding */
+  }
+}

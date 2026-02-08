@@ -1,0 +1,88 @@
+.about {
+  padding: 3rem 2rem;
+  background-color: white;
+  color: #1f2937;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #111827;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+.about-text strong {
+  font-weight: bold;
+  color: #af3d1e;
+}
+
+.about-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 280px;
+}
+
+.about-images img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔽 Tablet Screens */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center;
+    font-size: 1.05rem;
+  }
+
+  .about-images img {
+    max-height: 220px;
+  }
+}
+
+/* 🔽 Mobile Screens */
+@media (max-width: 480px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 0 0.5rem;
+  }
+
+  .about-images img {
+    max-height: 180px;
+  }
+}

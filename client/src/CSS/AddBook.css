@@ -1,0 +1,76 @@
+/* Container for the add book form */
+.add-book-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields styling */
+.add-book-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Button styling */
+.add-book-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.add-book-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screen sizes less than or equal to 768px */
+@media screen and (max-width: 768px) {
+  .add-book-container {
+    padding: 20px; /* Adjust padding on smaller screens */
+  }
+
+  .add-book-form input {
+    font-size: 14px; /* Slightly reduce font size */
+    padding: 8px; /* Reduce padding for smaller devices */
+  }
+
+  .add-book-form button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 12px; /* Adjust button padding for better click area */
+  }
+}
+
+/* For very small screens (<= 480px) */
+@media screen and (max-width: 480px) {
+  .add-book-container {
+    margin: 20px; /* Decrease margin on very small screens */
+    padding: 15px; /* Adjust padding for compact view */
+  }
+
+  .add-book-form input {
+    font-size: 12px; /* Further reduce font size for readability */
+    padding: 6px; /* Adjust padding for space efficiency */
+  }
+
+  .add-book-form button {
+    font-size: 12px; /* Further reduce button font size */
+    padding: 10px; /* Adjust button padding */
+  }
+}

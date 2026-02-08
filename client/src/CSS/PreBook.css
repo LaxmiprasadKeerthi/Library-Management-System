@@ -1,0 +1,144 @@
+.prebook-page {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.prebook-page h2 {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.prebook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.prebook-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.prebook-form select,
+.prebook-form input {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background-color: #f8fafc;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.prebook-form select:focus,
+.prebook-form input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.prebook-form button {
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prebook-form button:hover {
+  background-color: #1d4ed8;
+}
+
+.confirmation-message {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  background-color: #e0f2fe;
+  border: 1px solid #60a5fa;
+  border-radius: 10px;
+  color: #0369a1;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  animation: fadeInOut 6s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* ✅ Responsive Breakpoints */
+@media (max-width: 768px) {
+  .prebook-page {
+    margin: 2rem 1rem;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .prebook-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .prebook-form button {
+    font-size: 0.95rem;
+  }
+
+  .confirmation-message {
+    font-size: 0.95rem;
+    padding: 0.9rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .prebook-page {
+    margin: 2rem 0.5rem;
+    padding: 1.25rem;
+  }
+
+  .prebook-page h2 {
+    font-size: 1.3rem;
+  }
+
+  .prebook-form label {
+    font-size: 0.95rem;
+  }
+
+  .prebook-form select,
+  .prebook-form input {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .prebook-form button {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+
+  .confirmation-message {
+    font-size: 0.9rem;
+  }
+}
